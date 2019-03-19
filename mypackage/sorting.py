@@ -60,15 +60,15 @@ def merge_sort(items):
             j=j+1
             k=k+1
 
-    while i < len(lefthalf):
-        items[k]=lefthalf[i]
-        i=i+1
-        k=k+1
+        while i < len(lefthalf):
+            items[k]=lefthalf[i]
+            i=i+1
+            k=k+1
 
-    while j < len(righthalf):
-        items[k]=righthalf[j]
-        j=j+1
-        k=k+1
+        while j < len(righthalf):
+            items[k]=righthalf[j]
+            j=j+1
+            k=k+1
 
     return items
 
