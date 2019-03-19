@@ -40,13 +40,13 @@ Example:
     docstring goes here
     """
     if n<0 :
-            return("Input must be positive")  #since Fibonacci sequence is positive numbers
+        return("Input must be positive")  #since Fibonacci sequence is positive numbers
         # The first Fibonacci number is 0
     elif n==0:
-            return 0
+        return 0
         # The second Fibonacci number is 1
     elif n==1:
-            return 1
+        return 1
     else:
         return fibonacci(n-1)+fibonacci(n-2)
 
@@ -66,10 +66,10 @@ def factorial(n):
     """
     docstring goes here
     """
-     num = 1
-     for i in range(1, n + 1):
-         num *= i
-     return num
+    num = 1
+    for i in range(1, n + 1):
+        num *= i
+    return num
 
 
 
@@ -89,7 +89,7 @@ def factorial(n):
     docstring goes here
     """
 
-     str = ""
-     for i in word:
-         str = i + str
+    str = ""
+    for i in word:
+        str = i + str
     return str
