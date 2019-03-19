@@ -41,12 +41,10 @@ Example:
     """
     if n<0 :
         return("Input must be positive")  #since Fibonacci sequence is positive numbers
-        # The first Fibonacci number is 0
-    elif n==0:
-        return 0
-        # The second Fibonacci number is 1
-    elif n==1:
-        return 1
+        # The first Fibonacci number is 1
+    elif n<=1:
+        return n
+    
     else:
         return fibonacci(n-1)+fibonacci(n-2)
 
