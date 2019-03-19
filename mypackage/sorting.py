@@ -26,21 +26,21 @@ def bubble_sort(items):
 
 def merge_sort(items):
 
-        """Return array of items, sorted in ascending order
-        Args:
-            items: list or array-like object containing numerical values.
+    """Return array of items, sorted in ascending order
+    Args:
+        items: list or array-like object containing numerical values.
 
-        Returns:
-            array : array of items, sorted in ascending order
-        Example:
-            >>> merge_sort([50,10,5])
-            [5,10,50]
-        """
+    Returns:
+        array : array of items, sorted in ascending order
+    Example:
+        >>> merge_sort([50,10,5])
+        [5,10,50]
+    """
 
-        """
-        docstring goes here
-        """
-        if len(items)>1:
+    """
+    docstring goes here
+    """
+    if len(items)>1:
         mid = len(items)//2
         lefthalf = items[:mid]
         righthalf = items[mid:]
@@ -48,27 +48,27 @@ def merge_sort(items):
         merge_sort(lefthalf)
         merge_sort(righthalf)
 
-        i=0
-        j=0
-        k=0
-        while i < len(lefthalf) and j < len(righthalf):
-            if lefthalf[i] < righthalf[j]:
-                items[k]=lefthalf[i]
-                i=i+1
-            else:
-                items[k]=righthalf[j]
-                j=j+1
-            k=k+1
-
-        while i < len(lefthalf):
+    i=0
+    j=0
+    k=0
+    while i < len(lefthalf) and j < len(righthalf):
+        if lefthalf[i] < righthalf[j]:
             items[k]=lefthalf[i]
             i=i+1
-            k=k+1
-
-        while j < len(righthalf):
+        else:
             items[k]=righthalf[j]
             j=j+1
             k=k+1
+
+    while i < len(lefthalf):
+        items[k]=lefthalf[i]
+        i=i+1
+        k=k+1
+
+    while j < len(righthalf):
+        items[k]=righthalf[j]
+        j=j+1
+        k=k+1
 
     return items
 
