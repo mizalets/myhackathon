@@ -73,7 +73,7 @@ def factorial(n):
 
 
 
- def reverse(word):
+def reverse(word):
 
     """Return word in reverse
     Args:
