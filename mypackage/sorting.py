@@ -91,18 +91,18 @@ def quick_sort(items):
     """
     docstring goes here
     """
-   if len(items) == 2:
-       if items[0] > items[1]:
-           return [items[1], items[0]]
-       else:
-           return items
-   else:
-       pivot_val = items[0]
-       left_list = []
-       right_list = []
-       equal_list = []
+    if len(items) == 2:
+        if items[0] > items[1]:
+            return [items[1], items[0]]
+        else:
+            return items
+    else:
+        pivot_val = items[0]
+        left_list = []
+        right_list = []
+        equal_list = []
 
-       for item in range(len(items)):
+        for item in range(len(items)):
            if items[item] == pivot_val:
                equal_list.append(items[item])
            elif items[item] < pivot_val:
@@ -110,11 +110,11 @@ def quick_sort(items):
            else:
                right_list.append(items[item])
 
-       if len(left_list) > 1:
+        if len(left_list) > 1:
            left_list = quick_sort(left_list)
-       if len(right_list) > 1:
+        if len(right_list) > 1:
            right_list = quick_sort(right_list)
 
-       sorted_list = left_list + equal_list + right_list
+        sorted_list = left_list + equal_list + right_list
 
-   return sorted_list
+    return sorted_list
