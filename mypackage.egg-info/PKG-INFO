@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: mypackage
+Version: 0.1
+Summary: EDSA example python package
+Home-page: https://github.com/mizalets/myhackathon/
+Author: Nakedi Letsoalo
+Author-email: nakedilets@gmail.com
+License: MIT
+Description: # mypackage
+        This library is created as an example from EDSA of  how to publish one's own Python package.
+        
+        ## building this package locally
+        `python setup.py sdidt`
+        
+        ## installing this package from GitHub
+        `pip install git+https://github.com/mizalets/myhackathon.git`
+        
+        ## updating this package from Github`
+        `pip install --upgrade git+https://github.com/mizalets/myhackathon.git`
+        
+Platform: UNKNOWN
